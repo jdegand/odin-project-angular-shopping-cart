@@ -1,0 +1,15 @@
+@if(productItem){
+<div class="card">
+    <div>
+        <img src={{productItem.images[0]}} alt="">
+    </div>
+    <div>
+        <h2>{{productItem.title}}</h2>
+        <p>{{productItem.description}}</p>
+    </div>
+    <div class="card-bottom-row">
+        <button (click)="addProduct(productItem)">Add to Cart</button>
+        <p>{{productItem.price}}</p>
+    </div>
+</div>
+}

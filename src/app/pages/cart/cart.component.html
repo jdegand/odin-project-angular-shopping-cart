@@ -1,0 +1,43 @@
+<section class="cart-section">
+    <div>
+        @for(item of cartItems(); track item.product.id){
+        <div class="cart-section-row">
+            <div>
+                <img src={{item.product.images[0]}} alt="" width="150" height="150">
+            </div>
+            <div class="cart-section-details">
+                <div>
+                    <span>{{item.product['title']}}</span>
+                </div>
+                <div>
+                    <span>{{item.product.description}}</span>
+                </div>
+                <div class="cart-section-controls">
+                    <label for="quantity">Quantity:</label>
+                    <input id="quantity" class="cart-section-controls-input" type="number" width="30" min="1" max="9"
+                        value={{item.quantity}} [ngModel]="item.quantity"
+                        (ngModelChange)="onQuantitySelected(item,$event)" onkeydown="return false">
+                    <button type="button" (click)="remove(item)">Remove</button>
+                </div>
+            </div>
+            <div>
+                <span>{{(item.product.price * item.quantity) | currency}}</span>
+            </div>
+        </div>
+        } @empty {
+        <h2>Your cart is empty.</h2>
+        }
+    </div>
+    @if(cartItems().length){
+    <div class="subtotal">
+        <span>SubTotal:&nbsp;({{cartService.cartItemsTotal()}}&nbsp;{{cartService.cartItemsTotal() > 1 ?
+            "items": "item"}}):&nbsp;{{ cartService.subTotal() | currency}}</span>
+    </div>
+    }
+</section>
+
+<!--
+    <div>
+        {{cartItems() | json}}
+    </div>
+-->

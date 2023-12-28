@@ -1,0 +1,13 @@
+<!--
+<div>{{products | json}}</div>
+-->
+
+@if(products.length){
+
+<div class="product-grid">
+    @for(product of products; track product){
+    <app-product-card [product]="product"></app-product-card>
+    }
+</div>
+
+}
