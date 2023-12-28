@@ -2,6 +2,18 @@
 <div>{{products | json}}</div>
 -->
 
+@if(loading){
+    <div class="loading-div">
+        <app-loader></app-loader>
+    </div>
+}
+
+@if(error){
+    <div>
+        {{error | json}}
+    </div>
+}
+
 @if(products.length){
 
 <div class="product-grid">
