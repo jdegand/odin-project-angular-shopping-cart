@@ -9,7 +9,7 @@
     </div>
     <div class="card-bottom-row">
         <button (click)="addProduct(productItem)">Add to Cart</button>
-        <p>{{productItem.price}}</p>
+        <p><b>{{productItem.price | currency }}</b></p>
     </div>
 </div>
 }

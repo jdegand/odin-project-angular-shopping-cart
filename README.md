@@ -2,6 +2,16 @@
 
 This is an Angular solution for the [Odin Project React shopping cart project](https://www.theodinproject.com/lessons/node-path-react-new-shopping-cart).
 
+## Screenshots
+
+![](screenshots/platzi-shopping-cart-1.png)
+
+***
+
+![](screenshots/platzi-shopping-cart-2.png)
+
+***
+
 ## Built With
 
 - [Angular](https://angular.dev)
@@ -40,3 +50,4 @@ This is an Angular solution for the [Odin Project React shopping cart project](h
 - [Medium](https://blog.bitsrc.io/how-to-use-the-truncate-pipe-in-angular-64b01f3c8411) - truncate pipe
 - [Blog](https://brianflove.com/2019-09-26/ellipsis-directive/) - Ellipsis Directive
 - [Stack Overflow](https://stackoverflow.com/questions/49385369/angular-show-spinner-for-every-http-request-with-very-less-code-changes) - angular show spinner for every http request
+- [Stack Overflow](https://stackoverflow.com/questions/49403895/angular-currency-pipe-no-decimal-value) - currency pipe no decimal value
