@@ -26,14 +26,14 @@ export class ProductsComponent implements OnInit {
   ngOnInit(): void {
 
     // think about image optimization -> skeleton etc
-
+    // eslint problem with data being `any` type -> might not be easy fix    
     this.apiService.getProducts().subscribe({
-      next: (data:any) => this.products = data,
+      next: (data: any) => this.products = data,
       error: (e: unknown) => {
         this.loading = false;
         this.error = e;
       },
-      complete: () => this.loading = false 
+      complete: () => this.loading = false
     })
   }
 }

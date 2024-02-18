@@ -23,7 +23,7 @@ export class CartComponent {
   // If you had a separate component, you could use a computed signal for product price * quantity
   // versus doing it in the template -> minimal performance savings ?
 
-  remove(product: CartItem){
+  remove(product: CartItem) {
     this.cartService.removeFromCart(product)
   }
 

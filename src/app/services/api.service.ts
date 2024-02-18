@@ -10,11 +10,11 @@ export class ApiService {
 
   #BASE_URL = "https://api.escuelajs.co/api/v1/";
 
-  getProducts(){
+  getProducts() {
     return this.http.get(this.#BASE_URL + "products?offset=0&limit=12");
   }
 
-  getProductById(id:number){
+  getProductById(id: number) {
     return this.http.get(this.#BASE_URL + `products/${id}`);
   }
 }

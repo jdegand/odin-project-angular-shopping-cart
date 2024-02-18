@@ -24,7 +24,7 @@ This is an Angular solution for the [Odin Project React shopping cart project](h
 
 - Signals seem to be great for shopping carts.  I built this app to test that theory.  
 - `mutate` is now `update`.
-- `Platzi API` is not great.  The pictures for the items are just random picture links.  The description for the product will never match the image.  The default image size is also quite large at `640px`. The images array has multiple images for a product, but all images are the same size.
+- `Platzi API` is not great.  The pictures for the items are just random picture links.  The description for the product will never match the image.  The default image size is also quite large at `640px`. The images array has multiple images for a product, but all images are the same size. (UPDATED: Seems like the Platzi API is improving.)
 - [Fake Store API](https://fakestoreapi.com/) is a good alternative, but basic updates to the API have not been applied in a year, so I decided to try the Platzi API.  I need to keep looking for better alternatives.  
 - Platzi API doesn't have a stock property like the Fake Store API so you have to take extra steps to create a conditional to disable the `Add to Cart` button.    
 - I used the offset and limit parameters to limit the amount of products returned.  There are broken image links in some of the products.
