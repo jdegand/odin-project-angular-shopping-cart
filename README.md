@@ -1,6 +1,6 @@
 # Odin Project Angular Shopping Cart
 
-This is an Angular solution for the [Odin Project React shopping cart project](https://www.theodinproject.com/lessons/node-path-react-new-shopping-cart).
+[This](https://jdegand.github.io/odin-project-angular-shopping-cart) is an Angular solution for the [Odin Project React shopping cart project](https://www.theodinproject.com/lessons/node-path-react-new-shopping-cart).
 
 ## Screenshots
 
